@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>
 using namespace std;
 
@@ -18,4 +19,26 @@ int main()
     else
         std::cout << n << " is NOT prime !";
     return 0;
+=======
+#include <iostream>
+using namespace std;
+
+bool isPrime(int n)
+{
+    for (int tr = 2; tr < n / 2; tr++)
+        if ((n % tr) == 0)
+            return false;
+    return true;
+}
+int main()
+{
+    int n;
+    std::cout << "Enter a number:";
+    std::cin >> n;
+    if (isPrime(n))
+        std::cout << n << " is prime !";
+    else
+        std::cout << n << " is NOT prime !";
+    return 0;
+>>>>>>> 7af34d636c21a72f5202f2f03aceb965ea59cfa8
 }
